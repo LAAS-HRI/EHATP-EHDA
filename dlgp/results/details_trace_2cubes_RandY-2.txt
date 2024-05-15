@@ -1,0 +1,1041 @@
+
+
+Descendent state details (code = (1))
+
+Action pair: H4-PASSIVE['WAIT', 'PASS']|R5-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': ['R'], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': None, 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+
+Descendent state details (code = (2))
+
+Action pair: H9-PASSIVE['WAIT_TURN']|R6-pick('r1',)
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': None}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': None, 'l2': None}
+││    init.holding = {'R': 'r1', 'H': None}
+
+Action pair: H9-PASSIVE['WAIT_TURN']|R10-PASSIVE['PASS']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': ['R'], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': None, 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+
+Descendent state details (code = (3))
+
+Action pair: H11-PASSIVE['WAIT', 'PASS']|R12-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': None}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': None, 'l2': None}
+││    init.holding = {'R': 'r1', 'H': None}
+
+
+Descendent state details (code = (4))
+
+Action pair: H15-PASSIVE['WAIT_TURN']|R13-place('l1', 'r1')
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Action pair: H15-PASSIVE['WAIT_TURN']|R16-PASSIVE['PASS']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': None}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': None, 'l2': None}
+││    init.holding = {'R': 'r1', 'H': None}
+
+
+Descendent state details (code = (5))
+
+Action pair: H20-change_table_context('table', 'table_1')|R23-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Action pair: H24-PASSIVE['PASS']|R23-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+
+Descendent state details (code = (6))
+
+Action pair: H25-PASSIVE['WAIT_TURN']|R14-inspect_cube('r1',)
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Action pair: H25-PASSIVE['WAIT_TURN']|R26-PASSIVE['PASS']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+
+Descendent state details (code = (7))
+
+Action pair: H21-move_to_table('table', 'table_1')|R27-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Action pair: H28-PASSIVE['PASS']|R27-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+
+Descendent state details (code = (8))
+
+Action pair: H30-PASSIVE['WAIT_TURN']|R29-PASSIVE['WAIT', 'PASS']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+
+Descendent state details (code = (9))
+
+Action pair: H22-pick('y2',)|R31-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Action pair: H32-PASSIVE['PASS']|R31-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': ['H'], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table_1'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': None}
+
+
+Descendent state details (code = (10))
+
+Action pair: H35-PASSIVE['WAIT_TURN']|R34-PASSIVE['WAIT', 'PASS']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+
+Descendent state details (code = (11))
+
+Action pair: H36-change_table_context('table_1', 'table')|R39-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Action pair: H40-PASSIVE['PASS']|R39-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table_1'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+
+Descendent state details (code = (12))
+
+Action pair: H44-PASSIVE['WAIT_TURN']|R43-PASSIVE['WAIT', 'PASS']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 4
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+
+Descendent state details (code = (13))
+
+Action pair: H37-move_to_table('table_1', 'table')|R45-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Action pair: H46-PASSIVE['PASS']|R45-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 4
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table_1'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': False}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': False}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+
+Descendent state details (code = (14))
+
+Action pair: H48-PASSIVE['WAIT_TURN']|R49-PASSIVE['PASS']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+
+Descendent state details (code = (15))
+
+Action pair: H50-place('l2', 'y2')|R52-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Action pair: H53-PASSIVE['PASS']|R52-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': None}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': None}
+││    init.holding = {'R': None, 'H': 'y2'}
+
+
+Descendent state details (code = (16))
+
+Action pair: H55-PASSIVE['WAIT_TURN']|R54-PASSIVE['IDLE', 'PASS']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+
+Descendent state details (code = (17))
+
+Action pair: H51-inspect_cube('y2',)|R59-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Action pair: H60-PASSIVE['PASS']|R59-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': False}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': False}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+
+Descendent state details (code = (18))
+
+Action pair: H62-PASSIVE['WAIT_TURN']|R61-PASSIVE['IDLE', 'PASS']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+
+Descendent state details (code = #(19)#)
+
+Action pair: H66-PASSIVE['IDLE', 'PASS']|R67-PASSIVE['WAIT_TURN']
+
+The real designated state (state that the robot knows)
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Other possible states w.r.t. this action pair (human assumes to be a possible true state)
+
+Possible world number - 1
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 2
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}
+
+Possible world number - 3
+
+││    init.color_cubes = {'r1': {'on': [], 'color': 'r', 'below': None}, 'y2': {'on': [], 'color': 'y', 'below': None}}
+││    init.cube_at_table = {'y1': {'at_table': 'table'}, 'r1': {'at_table': 'table'}, 'w1': {'at_table': 'table'}, 'y2': {'at_table': 'table'}, 'b1': {'at_table': 'table_1'}, 'p1': {'at_table': 'table'}}
+││    init.agent_in_context = {'H': {'table_context': 'table'}, 'R': {'table_context': 'table'}}
+││    init.agent_at = {'H': {'agent_at_table': 'table'}, 'R': {'agent_at_table': 'table'}}
+││    init.inspected_cube_to_place = {'b1': {'inspected': False}, 'r1': {'inspected': True}, 'w1': {'inspected': False}, 'y2': {'inspected': True}, 'p1': {'inspected': False}}
+││    init.prepare_cleaned_base = {'b1': {'cleaned': False}, 'r1': {'cleaned': True}, 'w1': {'cleaned': False}, 'y2': {'cleaned': True}, 'p1': {'cleaned': False}}
+││    init.locations = {'l1': 'r1', 'l2': 'y2'}
+││    init.holding = {'R': None, 'H': None}

@@ -1,0 +1,37 @@
+@facts
+solution(l1, colors, r).
+solution(l1, on, table).
+solution(l2, colors, y).
+solution(l2, on, l1).
+color_cubes(r1, on, None).
+color_cubes(r1, color, r).
+color_cubes(y2, on, H).
+color_cubes(y2, color, y).
+cube_at_table(y1, at_table, table).
+cube_at_table(r1, at_table, table).
+cube_at_table(w1, at_table, table).
+cube_at_table(y2, at_table, table_1).
+cube_at_table(b1, at_table, table_1).
+cube_at_table(p1, at_table, table).
+agent_in_context(H, table_context, table).
+agent_in_context(R, table_context, table).
+agent_at(H, agent_at_table, table).
+agent_at(R, agent_at_table, table).
+inspected_cube_to_place(b1, inspected, False).
+inspected_cube_to_place(r1, inspected, True).
+inspected_cube_to_place(w1, inspected, False).
+inspected_cube_to_place(y2, inspected, False).
+inspected_cube_to_place(p1, inspected, False).
+prepare_cleaned_base(b1, cleaned, False).
+prepare_cleaned_base(r1, cleaned, False).
+prepare_cleaned_base(w1, cleaned, False).
+prepare_cleaned_base(y2, cleaned, False).
+prepare_cleaned_base(p1, cleaned, False).
+locations(l1, r1).
+@rules
+prepare_cleaned_base(A, cleaned, true) :- inspected_cube_to_place(A, inspected, true).
+
+@queries
+?(X) :- prepare_cleaned_base(X, cleaned, true).
+
+

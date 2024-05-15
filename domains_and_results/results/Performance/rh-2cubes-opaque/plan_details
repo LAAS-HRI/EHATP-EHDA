@@ -1,0 +1,90 @@
+time to explore: 10.46s
+Number of leaves: 3
+Nb states = 236
+Checking solution... Done! - 0.00s
+        All clear !
+Dumping solution...
+Solution dumped! - 0.15s
+
+initial_state.create_static_fluent("box_on_table", {
+        "box_1" : {"on_table":["table"]},
+        "box_2" : {"on_table":["table"]},
+    })
+    
+    initial_state.create_static_fluent("solution_1", {
+        "box_1" : {"contains":["r1"]},
+        "box_2" : {"contains":["w1"]}
+    })
+    initial_state.create_static_fluent("solution_2", {
+        "box_2" : {"contains":["r1"]},
+        "box_1" : {"contains":["w1"]}
+    })
+
+    # shashank - refined initial state
+    initial_state.create_dyn_fluent("color_cubes", { 
+        # "b1" : {"on":["H"]},
+        # "o1" : {"on":["b1"]},
+        # "g1" : {"on":["o1"]},
+        
+        # "y1" : {"on":["R"]},
+        "r1" : {"on":["R"]},
+        
+        "w1" : {"on":["H"]},
+        # "y2" : {"on":["H"]},
+        
+        # "b2" : {"on":["H"]},
+        # "p1" : {"on":["R"]}
+    })
+
+    initial_state.create_dyn_fluent("box_at_table", {         
+        "box_1" : {"empty": True},
+        "box_2" : {"empty": True}
+    })
+    initial_state.create_dyn_fluent("box_containing", {         
+        "box_1" : {"contains": []},
+        "box_2" : {"contains": []}
+    })
+
+    initial_state.create_static_fluent("box_transparent_type", {         
+        "box_1" : {"type": "opaque"}, # opaque or transparent
+        "box_2" : {"type": "opaque"}  # opaque or transparent
+    })
+
+    initial_state.create_dyn_fluent("cube_at_table", {         
+        # "y1" : {"at_table": "table"},
+        "r1" : {"at_table": "table"},
+        
+        "w1" : {"at_table": "table_1"}
+        # "y2" : {"at_table": "table_1"},
+
+        # "b1" : {"at_table": "table_1"},
+
+        # "p1" : {"at_table": "table"}
+    })
+
+    # make an exact copy of the above dynamic property, just change the property name as below
+    # cube_belongs_table
+    initial_state.create_static_fluent("cube_belongs_table", {         
+        # "y1" : {"at_table": "table"},
+        "r1" : {"at_table": "table"},
+        
+        "w1" : {"at_table": "table_1"},
+        # "y2" : {"at_table": "table_1"},
+
+        # "b1" : {"at_table": "table_1"},
+
+        # "p1" : {"at_table": "table"}
+    })
+
+    initial_state.create_dyn_fluent("agent_in_context", {  
+        # an agent can be in the context of table_1, the main table == Depicts facing the table        
+        "H" : {"table_context": "table"},
+        "R" : {"table_context": "table"}
+    })
+
+    # this is not in use:
+    initial_state.create_dyn_fluent("agent_at", {   
+        # an agent can be situated at the main table or at table_1  
+        "H" : {"agent_at_table": "table"},
+        "R" : {"agent_at_table": "table"}
+    })

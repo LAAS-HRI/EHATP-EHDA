@@ -1,0 +1,450 @@
+digraph G {
+	graph [nslimit=2 nslimit1=2 overlap=scale sep=5 splines=true]
+	compound=true
+	H3R2 [label="" color=black fixedsize=true shape=circle style=filled width=0.2]
+	label="" shape=doublecircle style=solid
+	H3R2_1 [label="Total number of worlds:1
+
+(Only relevant) details for the INITIAL (epistemic) state:
+
+
+(Designated) World - 1 : agent_at(R) = table,	agent_at(H) = table,	facing_table(R) = table,	facing_table(H) = table,	cube-at-table(r1) = table,	cube-at-table(w1) = table_1,	who-can-access(r1) = ['R'],	who-can-access(w1) = ['H'],	
+
+[[Some static facts in the initial state are specified as follows]]
+cube_belongs_to_table(r1) = table,	cube_belongs_to_table(w1) = table_1,	box_type(box_1) = opaque,	box_type(box_2) = opaque,	box_on_table(box_1) = table,	box_on_table(box_2) = table,	
+
+[[Each goal state must satisfy the following goal conditions]]
+GOAL: all cubes belonging to the same table initially, should be contained in one box eventually!!
+
+Who starts first? : HUMAN" shape=ellipse]
+	H3R2 -> H3R2_1 [label=<<b><font color="blue">A rough description of Init State and GOAL</font></b>> headport=n tailport=s]
+	subgraph cluster_0 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_1 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H7R9_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_1 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: move_to_table('table', 'table_1')" labeljust=c labelloc=c rankdir=TB style=rounded
+			H7R9 [label="[R]: PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_2 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H10R9_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_2 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['PASS']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H10R9 [label="[R]: PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H3R2_1 -> H10R9 [minlen=2]
+	H8R21 -> H8R21_1 [label=<<b><font color="blue">Post SA and INF</font></b>> headport=n lhead=cluster_2 tailport=s]
+	subgraph cluster_2 {
+		subgraph cluster_2 {
+			H14R11 [label="[H]: pick('w1',)" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+			H8R21 [label="[R]: pick('r1',)" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_4 {
+			bgcolor=lightyellow label="" style=solid
+			H8R21_1 [label="Total number of worlds: 2
+
+World - 1 : holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table_1,	facing_table(R) = table,	facing_table(H) = table_1,	cube-at-table(r1) = table,	who-can-access(r1) = ['R'],	
+
+(Designated) World - 2 : holding(R) = r1,	holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table_1,	facing_table(R) = table,	facing_table(H) = table_1,	
+
+"]
+		}
+	}
+	subgraph cluster_2 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">FALSE</font></font></b>> rankdir=TB style=solid
+	}
+	H7R9_1 -> H8R21
+	subgraph cluster_4 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_5 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H19R16_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_5 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['WAIT_TURN']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H19R16 [label="[R]: pick('r1',)" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H10R9_1 -> H19R16
+	H60R62 -> H60R62_1 [label=<<b><font color="blue">Post SA and INF</font></b>> headport=n lhead=cluster_5 tailport=s]
+	subgraph cluster_5 {
+		subgraph cluster_5 {
+			H37R35 [label="[H]: move_to_table('table_1', 'table')" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+			H60R62 [label="[R]: place_1('r1', 'box_1')" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_7 {
+			bgcolor=lightyellow label="" style=solid
+			H60R62_1 [label="Total number of worlds: 2
+
+World - 1 : holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table,	facing_table(R) = table,	facing_table(H) = table,	cube-contains-in-box(r1) = box_2,	
+
+(Designated) World - 2 : holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table,	facing_table(R) = table,	facing_table(H) = table,	cube-contains-in-box(r1) = box_1,	
+
+"]
+		}
+	}
+	subgraph cluster_5 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">FALSE</font></font></b>> rankdir=TB style=solid
+	}
+	H8R21_1 -> H60R62
+	subgraph cluster_7 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_8 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H26R28_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_8 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: move_to_table('table', 'table_1')" labeljust=c labelloc=c rankdir=TB style=rounded
+			H26R28 [label="[R]: PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_9 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H29R28_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_9 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['PASS']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H29R28 [label="[R]: PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H19R16_1 -> H29R28
+	subgraph cluster_9 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_10 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H93R94_1 [label="Total number of worlds:2
+
+" shape=box]
+		}
+		subgraph cluster_10 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['WAIT_TURN']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H93R94 [label="[R]: PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H60R62_1 -> H93R94
+	H27R75 -> H27R75_1 [label=<<b><font color="blue">Post SA and INF</font></b>> headport=n lhead=cluster_10 tailport=s]
+	subgraph cluster_10 {
+		subgraph cluster_10 {
+			H52R50 [label="[H]: pick('w1',)" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+			H27R75 [label="[R]: place_1('r1', 'box_1')" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_12 {
+			bgcolor=lightyellow label="" style=solid
+			H27R75_1 [label="Total number of worlds: 3
+
+World - 1 : holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table_1,	facing_table(R) = table,	facing_table(H) = table_1,	cube-contains-in-box(r1) = box_2,	
+World - 2 : holding(R) = r1,	holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table_1,	facing_table(R) = table,	facing_table(H) = table_1,	
+
+(Designated) World - 3 : holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table_1,	facing_table(R) = table,	facing_table(H) = table_1,	cube-contains-in-box(r1) = box_1,	
+
+"]
+		}
+	}
+	subgraph cluster_10 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">FALSE</font></font></b>> rankdir=TB style=solid
+	}
+	H26R28_1 -> H27R75
+	subgraph cluster_12 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_13 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H58R56_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_13 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['WAIT_TURN']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H58R56 [label="[R]: place_1('r1', 'box_1')" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H29R28_1 -> H58R56
+	H155R157 -> H155R157_1 [label=<<b><font color="blue">Post SA and INF</font></b>> len=0.5 lhead=cluster_13]
+	subgraph cluster_13 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_14 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H155R157_1 [label="Total number of worlds:1
+
+
+(Designated) World - 1 : holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table,	facing_table(R) = table,	facing_table(H) = table,	cube-contains-in-box(r1) = box_1,	
+
+" shape=box]
+		}
+		subgraph cluster_14 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: communicate_if_cube_can_be_put('w1', 'box_2')" labeljust=c labelloc=c rankdir=TB style=rounded
+			H155R157 [label="[R]: PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_15 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['PASS']" labeljust=c labelloc=c rankdir=TB style=rounded
+		}
+	}
+	H93R94_1 -> H155R157
+	H205R207 -> H205R207_1 [label=<<b><font color="blue">Post SA and INF</font></b>> headport=n lhead=cluster_15 tailport=s]
+	subgraph cluster_15 {
+		subgraph cluster_15 {
+			H121R120 [label="[H]: move_to_table('table_1', 'table')" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+			H205R207 [label="[R]: PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_17 {
+			bgcolor=lightyellow label="" style=solid
+			H205R207_1 [label="Total number of worlds: 2
+
+World - 1 : holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table,	facing_table(R) = table,	facing_table(H) = table,	cube-contains-in-box(r1) = box_2,	
+
+(Designated) World - 2 : holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table,	facing_table(R) = table,	facing_table(H) = table,	cube-contains-in-box(r1) = box_1,	
+
+"]
+		}
+	}
+	subgraph cluster_15 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">FALSE</font></font></b>> rankdir=TB style=solid
+	}
+	H27R75_1 -> H205R207
+	subgraph cluster_17 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_18 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H81R83_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_18 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: move_to_table('table', 'table_1')" labeljust=c labelloc=c rankdir=TB style=rounded
+			H81R83 [label="[R]: PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_19 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['PASS']" labeljust=c labelloc=c rankdir=TB style=rounded
+		}
+	}
+	H58R56_1 -> H81R83
+	subgraph cluster_19 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_20 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H223R224_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_20 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['WAIT_TURN']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H223R224 [label="[R]: PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H155R157_1 -> H223R224
+	subgraph cluster_20 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_21 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H301R302_1 [label="Total number of worlds:2
+
+" shape=box]
+		}
+		subgraph cluster_21 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['WAIT_TURN']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H301R302 [label="[R]: PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H205R207_1 -> H301R302
+	H82R220 -> H82R220_1 [label=<<b><font color="blue">Post SA and INF</font></b>> headport=n lhead=cluster_21 tailport=s]
+	subgraph cluster_21 {
+		subgraph cluster_21 {
+			H138R137 [label="[H]: pick('w1',)" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+			H82R220 [label="[R]: PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_23 {
+			bgcolor=lightyellow label="" style=solid
+			H82R220_1 [label="Total number of worlds: 1
+
+
+(Designated) World - 1 : holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table_1,	facing_table(R) = table,	facing_table(H) = table_1,	cube-contains-in-box(r1) = box_1,	
+
+"]
+		}
+	}
+	subgraph cluster_21 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">FALSE</font></font></b>> rankdir=TB style=solid
+	}
+	H81R83_1 -> H82R220
+	subgraph cluster_23 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_24 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H322R323_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_24 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: place_1('w1', 'box_2')" labeljust=c labelloc=c rankdir=TB style=rounded
+			H322R323 [label="[R]: PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_25 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['PASS']" labeljust=c labelloc=c rankdir=TB style=rounded
+		}
+	}
+	H223R224_1 -> H322R323
+	H402R404 -> H402R404_1 [label=<<b><font color="blue">Post SA and INF</font></b>> len=0.5 lhead=cluster_25]
+	subgraph cluster_25 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_26 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H402R404_1 [label="Total number of worlds:1
+
+
+(Designated) World - 1 : holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table,	facing_table(R) = table,	facing_table(H) = table,	cube-contains-in-box(r1) = box_1,	
+
+" shape=box]
+		}
+		subgraph cluster_26 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: communicate_if_cube_can_be_put('w1', 'box_2')" labeljust=c labelloc=c rankdir=TB style=rounded
+			H402R404 [label="[R]: PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_27 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['PASS']" labeljust=c labelloc=c rankdir=TB style=rounded
+		}
+	}
+	H301R302_1 -> H402R404
+	H438R440 -> H438R440_1 [label=<<b><font color="blue">Post SA and INF</font></b>> headport=n lhead=cluster_27 tailport=s]
+	subgraph cluster_27 {
+		subgraph cluster_27 {
+			H319R318 [label="[H]: move_to_table('table_1', 'table')" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+			H438R440 [label="[R]: PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_29 {
+			bgcolor=lightyellow label="" style=solid
+			H438R440_1 [label="Total number of worlds: 1
+
+
+(Designated) World - 1 : holding(H) = w1,	agent_at(R) = table,	agent_at(H) = table,	facing_table(R) = table,	facing_table(H) = table,	cube-contains-in-box(r1) = box_1,	
+
+"]
+		}
+	}
+	subgraph cluster_27 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">FALSE</font></font></b>> rankdir=TB style=solid
+	}
+	H82R220_1 -> H438R440
+	subgraph cluster_29 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_30 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H445R444_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_30 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['WAIT_TURN']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H445R444 [label="[R]: PASSIVE['IDLE', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H322R323_1 -> H445R444
+	subgraph cluster_30 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_31 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H497R498_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_31 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['WAIT_TURN']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H497R498 [label="[R]: PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H402R404_1 -> H497R498
+	subgraph cluster_31 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_32 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H533R534_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_32 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['WAIT_TURN']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H533R534 [label="[R]: PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H438R440_1 -> H533R534
+	f_H538R539 [label="" color=black fixedsize=true shape=doublecircle style=filled width=0.2 xlabel="(163)"]
+	H445R444 -> f_H538R539
+	subgraph cluster_32 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_33 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H558R559_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_33 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: place_1('w1', 'box_2')" labeljust=c labelloc=c rankdir=TB style=rounded
+			H558R559 [label="[R]: PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_34 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['PASS']" labeljust=c labelloc=c rankdir=TB style=rounded
+		}
+	}
+	H497R498_1 -> H558R559
+	subgraph cluster_34 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_35 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H591R592_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_35 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: place_1('w1', 'box_2')" labeljust=c labelloc=c rankdir=TB style=rounded
+			H591R592 [label="[R]: PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+		subgraph cluster_36 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['PASS']" labeljust=c labelloc=c rankdir=TB style=rounded
+		}
+	}
+	H533R534_1 -> H591R592
+	subgraph cluster_36 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_37 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H607R606_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_37 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['WAIT_TURN']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H607R606 [label="[R]: PASSIVE['IDLE', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H558R559_1 -> H607R606
+	subgraph cluster_37 {
+		bgcolor="#f3f3f3" color=black label=<<b><font color="blue">CoPresence: <font color="red">TRUE</font></font></b>> rankdir=TB style=solid
+		subgraph cluster_38 {
+			bgcolor=lightyellow label="" shape=ellipse style=solid
+			H623R622_1 [label="Total number of worlds:1
+
+" shape=box]
+		}
+		subgraph cluster_38 {
+			bgcolor="#FFE6CC" color="#D6B656" label="[H]: PASSIVE['WAIT_TURN']" labeljust=c labelloc=c rankdir=TB style=rounded
+			H623R622 [label="[R]: PASSIVE['IDLE', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" labeljust=c labelloc=c rankdir=TB shape=ellipse style="filled,solid,rounded"]
+		}
+	}
+	H591R592_1 -> H623R622
+	f_H626R627 [label="" color=black fixedsize=true shape=doublecircle style=filled width=0.2 xlabel="(203)"]
+	H607R606 -> f_H626R627
+	f_H642R643 [label="" color=black fixedsize=true shape=doublecircle style=filled width=0.2 xlabel="(211)"]
+	H623R622 -> f_H642R643
+}

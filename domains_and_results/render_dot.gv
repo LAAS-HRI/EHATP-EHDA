@@ -1,0 +1,745 @@
+digraph G {
+	graph [nslimit=2 nslimit1=2 overlap=scale sep=5 splines=true]
+	compound=true
+	H3R2 [label="" color=black fixedsize=true shape=circle style=filled width=0.2]
+	subgraph cluster_0 {
+		bgcolor="#f3f3f3" label="1-Step(1)" style=solid
+		subgraph cluster_1 {
+			bgcolor="#FFE6CC" color="#D6B656" label="change_focus_towards('kitchen', 'pantry')" style=rounded
+			H8R13 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_2 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H14R13 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H3R2 -> H8R13 [lhead=cluster_0 minlen=2]
+	subgraph cluster_3 {
+		bgcolor="#f3f3f3" label="2-Step(2)" style=solid
+		subgraph cluster_4 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H20R17 [label="cut()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H20R21 [label="PASSIVE['PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H8R13 -> H20R17 [lhead=cluster_3]
+	subgraph cluster_5 {
+		bgcolor="#f3f3f3" label="2-Step(3)" style=solid
+		subgraph cluster_6 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H27R24 [label="cut()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H27R28 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H14R13 -> H27R24 [lhead=cluster_5]
+	subgraph cluster_7 {
+		bgcolor="#f3f3f3" label="3-Step(4)" style=solid
+		subgraph cluster_8 {
+			bgcolor="#FFE6CC" color="#D6B656" label="move('kitchen', 'pantry')" style=rounded
+			H9R29 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H20R17 -> H9R29 [lhead=cluster_7]
+	subgraph cluster_9 {
+		bgcolor="#f3f3f3" label="3-Step(6)" style=solid
+		subgraph cluster_10 {
+			bgcolor="#FFE6CC" color="#D6B656" label="change_focus_towards('kitchen', 'pantry')" style=rounded
+			H35R40 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_11 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H41R40 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H27R24 -> H35R40 [lhead=cluster_9]
+	subgraph cluster_12 {
+		bgcolor="#f3f3f3" label="4-Step(7)" style=solid
+		subgraph cluster_13 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H47R18 [label="wash()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H47R48 [label="PASSIVE['PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H9R29 -> H47R18 [lhead=cluster_12]
+	subgraph cluster_14 {
+		bgcolor="#f3f3f3" label="4-Step(9)" style=solid
+		subgraph cluster_15 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H56R25 [label="wash()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H56R57 [label="PASSIVE['PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H35R40 -> H56R25 [lhead=cluster_14]
+	subgraph cluster_16 {
+		bgcolor="#f3f3f3" label="4-Step(10)" style=solid
+		subgraph cluster_17 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H58R25 [label="wash()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H58R59 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H41R40 -> H58R25 [lhead=cluster_16]
+	subgraph cluster_18 {
+		bgcolor="#f3f3f3" label="5-Step(11)" style=solid
+		subgraph cluster_19 {
+			bgcolor="#FFE6CC" color="#D6B656" label="get_ingredient()" style=rounded
+			H10R60 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H47R18 -> H10R60 [lhead=cluster_18]
+	subgraph cluster_20 {
+		bgcolor="#f3f3f3" label="5-Step(15)" style=solid
+		subgraph cluster_21 {
+			bgcolor="#FFE6CC" color="#D6B656" label="move('kitchen', 'pantry')" style=rounded
+			H36R64 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H56R25 -> H36R64 [lhead=cluster_20]
+	subgraph cluster_22 {
+		bgcolor="#f3f3f3" label="5-Step(17)" style=solid
+		subgraph cluster_23 {
+			bgcolor="#FFE6CC" color="#D6B656" label="change_focus_towards('kitchen', 'pantry')" style=rounded
+			H70R75 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_24 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H76R75 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H58R25 -> H70R75 [lhead=cluster_22]
+	subgraph cluster_25 {
+		bgcolor="#f3f3f3" label="6-Step(18)" style=solid
+		subgraph cluster_26 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H88R82 [label="seasoning()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H88R85 [label="put_on_stove()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H88R89 [label="PASSIVE['PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H10R60 -> H88R82 [lhead=cluster_25]
+	subgraph cluster_27 {
+		bgcolor="#f3f3f3" label="6-Step(22)" style=solid
+		subgraph cluster_28 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H135R129 [label="seasoning()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H135R132 [label="put_on_stove()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H135R136 [label="PASSIVE['PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H36R64 -> H135R129 [lhead=cluster_27]
+	subgraph cluster_29 {
+		bgcolor="#f3f3f3" label="6-Step(24)" style=solid
+		subgraph cluster_30 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H151R145 [label="seasoning()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H151R148 [label="put_on_stove()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H151R152 [label="PASSIVE['PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H70R75 -> H151R145 [lhead=cluster_29]
+	subgraph cluster_31 {
+		bgcolor="#f3f3f3" label="6-Step(25)" style=solid
+		subgraph cluster_32 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H159R153 [label="seasoning()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H159R156 [label="put_on_stove()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H159R160 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H76R75 -> H159R153 [lhead=cluster_31]
+	subgraph cluster_33 {
+		bgcolor="#f3f3f3" label="7-Step(26)" style=solid
+		subgraph cluster_34 {
+			bgcolor="#FFE6CC" color="#D6B656" label="change_focus_towards('pantry', 'kitchen')" style=rounded
+			H11R161 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H88R82 -> H11R161 [lhead=cluster_33]
+	subgraph cluster_35 {
+		bgcolor="#f3f3f3" label="7-Step(35)" style=solid
+		subgraph cluster_36 {
+			bgcolor="#FFE6CC" color="#D6B656" label="get_ingredient()" style=rounded
+			H37R170 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H135R129 -> H37R170 [lhead=cluster_35]
+	subgraph cluster_37 {
+		bgcolor="#f3f3f3" label="7-Step(40)" style=solid
+		subgraph cluster_38 {
+			bgcolor="#FFE6CC" color="#D6B656" label="move('kitchen', 'pantry')" style=rounded
+			H71R175 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H151R145 -> H71R175 [lhead=cluster_37]
+	subgraph cluster_39 {
+		bgcolor="#f3f3f3" label="7-Step(43)" style=solid
+		subgraph cluster_40 {
+			bgcolor="#FFE6CC" color="#D6B656" label="change_focus_towards('kitchen', 'pantry')" style=rounded
+			H182R187 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_41 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H188R187 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H159R153 -> H182R187 [lhead=cluster_39]
+	subgraph cluster_42 {
+		bgcolor="#f3f3f3" label="8-Step(45)" style=solid
+		subgraph cluster_43 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H211R83 [label="put_on_stove()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H211R212 [label="PASSIVE['PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H11R161 -> H211R83 [lhead=cluster_42]
+	subgraph cluster_44 {
+		bgcolor="#f3f3f3" label="8-Step(54)" style=solid
+		subgraph cluster_45 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H323R130 [label="put_on_stove()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H323R324 [label="PASSIVE['PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H37R170 -> H323R130 [lhead=cluster_44]
+	subgraph cluster_46 {
+		bgcolor="#f3f3f3" label="8-Step(59)" style=solid
+		subgraph cluster_47 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H363R146 [label="put_on_stove()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H363R364 [label="PASSIVE['PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H71R175 -> H363R146 [lhead=cluster_46]
+	subgraph cluster_48 {
+		bgcolor="#f3f3f3" label="8-Step(62)" style=solid
+		subgraph cluster_49 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H381R154 [label="put_on_stove()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H381R382 [label="PASSIVE['PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H182R187 -> H381R154 [lhead=cluster_48]
+	subgraph cluster_50 {
+		bgcolor="#f3f3f3" label="8-Step(63)" style=solid
+		subgraph cluster_51 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H383R154 [label="put_on_stove()" color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style="filled,solid,rounded"]
+			H383R384 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H188R187 -> H383R154 [lhead=cluster_50]
+	subgraph cluster_52 {
+		bgcolor="#f3f3f3" label="9-Step(66)" style=solid
+		subgraph cluster_53 {
+			bgcolor="#FFE6CC" color="#D6B656" label="move('pantry', 'kitchen')" style=rounded
+			H12R389 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H211R83 -> H12R389 [lhead=cluster_52]
+	subgraph cluster_54 {
+		bgcolor="#f3f3f3" label="9-Step(87)" style=solid
+		subgraph cluster_55 {
+			bgcolor="#FFE6CC" color="#D6B656" label="change_focus_towards('pantry', 'kitchen')" style=rounded
+			H38R410 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H323R130 -> H38R410 [lhead=cluster_54]
+	subgraph cluster_56 {
+		bgcolor="#f3f3f3" label="9-Step(99)" style=solid
+		subgraph cluster_57 {
+			bgcolor="#FFE6CC" color="#D6B656" label="get_ingredient()" style=rounded
+			H72R422 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H363R146 -> H72R422 [lhead=cluster_56]
+	subgraph cluster_58 {
+		bgcolor="#f3f3f3" label="9-Step(106)" style=solid
+		subgraph cluster_59 {
+			bgcolor="#FFE6CC" color="#D6B656" label="move('kitchen', 'pantry')" style=rounded
+			H183R429 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H381R154 -> H183R429 [lhead=cluster_58]
+	subgraph cluster_60 {
+		bgcolor="#f3f3f3" label="9-Step(108)" style=solid
+		subgraph cluster_61 {
+			bgcolor="#FFE6CC" color="#D6B656" label="change_focus_towards('kitchen', 'pantry')" style=rounded
+			H435R440 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_62 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H441R440 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H383R154 -> H435R440 [lhead=cluster_60]
+	subgraph cluster_63 {
+		bgcolor="#f3f3f3" label="10-Step(112)" style=solid
+		subgraph cluster_64 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H456R457 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H12R389 -> H456R457 [lhead=cluster_63]
+	subgraph cluster_65 {
+		bgcolor="#f3f3f3" label="10-Step(133)" style=solid
+		subgraph cluster_66 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H599R598 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H38R410 -> H599R598 [lhead=cluster_65]
+	subgraph cluster_67 {
+		bgcolor="#f3f3f3" label="10-Step(145)" style=solid
+		subgraph cluster_68 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H705R704 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H72R422 -> H705R704 [lhead=cluster_67]
+	subgraph cluster_69 {
+		bgcolor="#f3f3f3" label="10-Step(152)" style=solid
+		subgraph cluster_70 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H760R759 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H183R429 -> H760R759 [lhead=cluster_69]
+	subgraph cluster_71 {
+		bgcolor="#f3f3f3" label="10-Step(154)" style=solid
+		subgraph cluster_72 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H765R764 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H435R440 -> H765R764 [lhead=cluster_71]
+	subgraph cluster_73 {
+		bgcolor="#f3f3f3" label="11-Step(162)" style=solid
+		subgraph cluster_74 {
+			bgcolor="#FFE6CC" color="#D6B656" label="put_ingredient()" style=rounded
+			H785R786 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_75 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H787R786 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H456R457 -> H785R786 [lhead=cluster_73]
+	subgraph cluster_76 {
+		bgcolor="#f3f3f3" label="11-Step(223)" style=solid
+		subgraph cluster_77 {
+			bgcolor="#FFE6CC" color="#D6B656" label="move('pantry', 'kitchen')" style=rounded
+			H39R968 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H599R598 -> H39R968 [lhead=cluster_76]
+	subgraph cluster_78 {
+		bgcolor="#f3f3f3" label="11-Step(248)" style=solid
+		subgraph cluster_79 {
+			bgcolor="#FFE6CC" color="#D6B656" label="change_focus_towards('pantry', 'kitchen')" style=rounded
+			H73R993 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H705R704 -> H73R993 [lhead=cluster_78]
+	subgraph cluster_80 {
+		bgcolor="#f3f3f3" label="11-Step(261)" style=solid
+		subgraph cluster_81 {
+			bgcolor="#FFE6CC" color="#D6B656" label="get_ingredient()" style=rounded
+			H184R1006 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H760R759 -> H184R1006 [lhead=cluster_80]
+	subgraph cluster_82 {
+		bgcolor="#f3f3f3" label="11-Step(264)" style=solid
+		subgraph cluster_83 {
+			bgcolor="#FFE6CC" color="#D6B656" label="move('kitchen', 'pantry')" style=rounded
+			H436R1009 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H765R764 -> H436R1009 [lhead=cluster_82]
+	subgraph cluster_84 {
+		bgcolor="#f3f3f3" label="12-Step(269)" style=solid
+		subgraph cluster_85 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H1015R1016 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H785R786 -> H1015R1016 [lhead=cluster_84]
+	subgraph cluster_86 {
+		bgcolor="#f3f3f3" label="12-Step(322)" style=solid
+		subgraph cluster_87 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H1187R1188 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H39R968 -> H1187R1188 [lhead=cluster_86]
+	subgraph cluster_88 {
+		bgcolor="#f3f3f3" label="12-Step(347)" style=solid
+		subgraph cluster_89 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H1323R1322 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H73R993 -> H1323R1322 [lhead=cluster_88]
+	subgraph cluster_90 {
+		bgcolor="#f3f3f3" label="12-Step(360)" style=solid
+		subgraph cluster_91 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H1428R1427 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H184R1006 -> H1428R1427 [lhead=cluster_90]
+	subgraph cluster_92 {
+		bgcolor="#f3f3f3" label="12-Step(363)" style=solid
+		subgraph cluster_93 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H1435R1434 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H436R1009 -> H1435R1434 [lhead=cluster_92]
+	subgraph cluster_94 {
+		bgcolor="#f3f3f3" label="13-Step(368)" style=solid
+		subgraph cluster_95 {
+			bgcolor="#FFE6CC" color="#D6B656" label="communicate_status_of_seasoned()" style=rounded
+			H1446R1448 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_96 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H1449R1448 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H1015R1016 -> H1446R1448 [lhead=cluster_94]
+	subgraph cluster_97 {
+		bgcolor="#f3f3f3" label="13-Step(429)" style=solid
+		subgraph cluster_98 {
+			bgcolor="#FFE6CC" color="#D6B656" label="put_ingredient()" style=rounded
+			H1605R1606 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_99 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H1607R1606 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H1187R1188 -> H1605R1606 [lhead=cluster_97]
+	subgraph cluster_100 {
+		bgcolor="#f3f3f3" label="13-Step(486)" style=solid
+		subgraph cluster_101 {
+			bgcolor="#FFE6CC" color="#D6B656" label="move('pantry', 'kitchen')" style=rounded
+			H74R1776 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H1323R1322 -> H74R1776 [lhead=cluster_100]
+	subgraph cluster_102 {
+		bgcolor="#f3f3f3" label="13-Step(507)" style=solid
+		subgraph cluster_103 {
+			bgcolor="#FFE6CC" color="#D6B656" label="change_focus_towards('pantry', 'kitchen')" style=rounded
+			H185R1797 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H1428R1427 -> H185R1797 [lhead=cluster_102]
+	subgraph cluster_104 {
+		bgcolor="#f3f3f3" label="13-Step(511)" style=solid
+		subgraph cluster_105 {
+			bgcolor="#FFE6CC" color="#D6B656" label="get_ingredient()" style=rounded
+			H437R1801 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H1435R1434 -> H437R1801 [lhead=cluster_104]
+	subgraph cluster_106 {
+		bgcolor="#f3f3f3" label="14-Step(517)" style=solid
+		subgraph cluster_107 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H1808R1809 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H1446R1448 -> H1808R1809 [lhead=cluster_106]
+	subgraph cluster_108 {
+		bgcolor="#f3f3f3" label="14-Step(606)" style=solid
+		subgraph cluster_109 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H2054R2055 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H1605R1606 -> H2054R2055 [lhead=cluster_108]
+	subgraph cluster_110 {
+		bgcolor="#f3f3f3" label="14-Step(669)" style=solid
+		subgraph cluster_111 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H2244R2245 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H74R1776 -> H2244R2245 [lhead=cluster_110]
+	subgraph cluster_112 {
+		bgcolor="#f3f3f3" label="14-Step(690)" style=solid
+		subgraph cluster_113 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H2332R2331 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H185R1797 -> H2332R2331 [lhead=cluster_112]
+	subgraph cluster_114 {
+		bgcolor="#f3f3f3" label="14-Step(694)" style=solid
+		subgraph cluster_115 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H2341R2340 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H437R1801 -> H2341R2340 [lhead=cluster_114]
+	subgraph cluster_116 {
+		bgcolor="#f3f3f3" label="15-Step(700)" style=solid
+		subgraph cluster_117 {
+			bgcolor="#FFE6CC" color="#D6B656" label="aux_done_cooking()" style=rounded
+			H2353R2354 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_118 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H2355R2354 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H1808R1809 -> H2353R2354 [lhead=cluster_116]
+	subgraph cluster_119 {
+		bgcolor="#f3f3f3" label="15-Step(768)" style=solid
+		subgraph cluster_120 {
+			bgcolor="#FFE6CC" color="#D6B656" label="communicate_status_of_seasoned()" style=rounded
+			H2512R2514 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_121 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H2515R2514 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H2054R2055 -> H2512R2514 [lhead=cluster_119]
+	subgraph cluster_122 {
+		bgcolor="#f3f3f3" label="15-Step(828)" style=solid
+		subgraph cluster_123 {
+			bgcolor="#FFE6CC" color="#D6B656" label="put_ingredient()" style=rounded
+			H2693R2694 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_124 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H2695R2694 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H2244R2245 -> H2693R2694 [lhead=cluster_122]
+	subgraph cluster_125 {
+		bgcolor="#f3f3f3" label="15-Step(864)" style=solid
+		subgraph cluster_126 {
+			bgcolor="#FFE6CC" color="#D6B656" label="move('pantry', 'kitchen')" style=rounded
+			H186R2801 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H2332R2331 -> H186R2801 [lhead=cluster_125]
+	subgraph cluster_127 {
+		bgcolor="#f3f3f3" label="15-Step(869)" style=solid
+		subgraph cluster_128 {
+			bgcolor="#FFE6CC" color="#D6B656" label="change_focus_towards('pantry', 'kitchen')" style=rounded
+			H438R2806 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H2341R2340 -> H438R2806 [lhead=cluster_127]
+	subgraph cluster_129 {
+		bgcolor="#f3f3f3" label="16-Step(876)" style=solid
+		subgraph cluster_130 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H2814R2813 [label="PASSIVE['IDLE', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H2353R2354 -> H2814R2813 [lhead=cluster_129]
+	subgraph cluster_131 {
+		bgcolor="#f3f3f3" label="16-Step(933)" style=solid
+		subgraph cluster_132 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H2960R2961 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H2512R2514 -> H2960R2961 [lhead=cluster_131]
+	subgraph cluster_133 {
+		bgcolor="#f3f3f3" label="16-Step(1010)" style=solid
+		subgraph cluster_134 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H3172R3173 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H2693R2694 -> H3172R3173 [lhead=cluster_133]
+	subgraph cluster_135 {
+		bgcolor="#f3f3f3" label="16-Step(1053)" style=solid
+		subgraph cluster_136 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H3300R3301 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H186R2801 -> H3300R3301 [lhead=cluster_135]
+	subgraph cluster_137 {
+		bgcolor="#f3f3f3" label="16-Step(1058)" style=solid
+		subgraph cluster_138 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H3314R3313 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H438R2806 -> H3314R3313 [lhead=cluster_137]
+	f_H3332R3333 [label="" color=black fixedsize=true shape=doublecircle style=filled width=0.2 xlabel="(1065)"]
+	H2814R2813 -> f_H3332R3333
+	subgraph cluster_139 {
+		bgcolor="#f3f3f3" label="17-Step(1122)" style=solid
+		subgraph cluster_140 {
+			bgcolor="#FFE6CC" color="#D6B656" label="aux_done_cooking()" style=rounded
+			H3455R3456 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_141 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H3457R3456 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H2960R2961 -> H3455R3456 [lhead=cluster_139]
+	subgraph cluster_142 {
+		bgcolor="#f3f3f3" label="17-Step(1181)" style=solid
+		subgraph cluster_143 {
+			bgcolor="#FFE6CC" color="#D6B656" label="communicate_status_of_seasoned()" style=rounded
+			H3597R3599 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_144 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H3600R3599 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H3172R3173 -> H3597R3599 [lhead=cluster_142]
+	subgraph cluster_145 {
+		bgcolor="#f3f3f3" label="17-Step(1218)" style=solid
+		subgraph cluster_146 {
+			bgcolor="#FFE6CC" color="#D6B656" label="put_ingredient()" style=rounded
+			H3728R3729 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_147 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H3730R3729 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H3300R3301 -> H3728R3729 [lhead=cluster_145]
+	subgraph cluster_148 {
+		bgcolor="#f3f3f3" label="17-Step(1225)" style=solid
+		subgraph cluster_149 {
+			bgcolor="#FFE6CC" color="#D6B656" label="move('pantry', 'kitchen')" style=rounded
+			H439R3749 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H3314R3313 -> H439R3749 [lhead=cluster_148]
+	subgraph cluster_150 {
+		bgcolor="#f3f3f3" label="18-Step(1250)" style=solid
+		subgraph cluster_151 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H3812R3811 [label="PASSIVE['IDLE', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H3455R3456 -> H3812R3811 [lhead=cluster_150]
+	subgraph cluster_152 {
+		bgcolor="#f3f3f3" label="18-Step(1281)" style=solid
+		subgraph cluster_153 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H3882R3883 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H3597R3599 -> H3882R3883 [lhead=cluster_152]
+	subgraph cluster_154 {
+		bgcolor="#f3f3f3" label="18-Step(1322)" style=solid
+		subgraph cluster_155 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H3996R3997 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H3728R3729 -> H3996R3997 [lhead=cluster_154]
+	subgraph cluster_156 {
+		bgcolor="#f3f3f3" label="18-Step(1329)" style=solid
+		subgraph cluster_157 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H4017R4018 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H439R3749 -> H4017R4018 [lhead=cluster_156]
+	f_H4088R4089 [label="" color=black fixedsize=true shape=doublecircle style=filled width=0.2 xlabel="(1359)"]
+	H3812R3811 -> f_H4088R4089
+	subgraph cluster_158 {
+		bgcolor="#f3f3f3" label="19-Step(1407)" style=solid
+		subgraph cluster_159 {
+			bgcolor="#FFE6CC" color="#D6B656" label="aux_done_cooking()" style=rounded
+			H4186R4187 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_160 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H4188R4187 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H3882R3883 -> H4186R4187 [lhead=cluster_158]
+	subgraph cluster_161 {
+		bgcolor="#f3f3f3" label="19-Step(1443)" style=solid
+		subgraph cluster_162 {
+			bgcolor="#FFE6CC" color="#D6B656" label="aux_done_cooking()" style=rounded
+			H4276R4277 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_163 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H4278R4277 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H3996R3997 -> H4276R4277 [lhead=cluster_161]
+	subgraph cluster_164 {
+		bgcolor="#f3f3f3" label="19-Step(1448)" style=solid
+		subgraph cluster_165 {
+			bgcolor="#FFE6CC" color="#D6B656" label="put_ingredient()" style=rounded
+			H4291R4292 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_166 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H4293R4292 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H4017R4018 -> H4291R4292 [lhead=cluster_164]
+	subgraph cluster_167 {
+		bgcolor="#f3f3f3" label="20-Step(1462)" style=solid
+		subgraph cluster_168 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H4336R4335 [label="PASSIVE['IDLE', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H4186R4187 -> H4336R4335 [lhead=cluster_167]
+	subgraph cluster_169 {
+		bgcolor="#f3f3f3" label="20-Step(1480)" style=solid
+		subgraph cluster_170 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H4372R4371 [label="PASSIVE['IDLE', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H4276R4277 -> H4372R4371 [lhead=cluster_169]
+	subgraph cluster_171 {
+		bgcolor="#f3f3f3" label="20-Step(1485)" style=solid
+		subgraph cluster_172 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H4382R4383 [label="PASSIVE['WAIT', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H4291R4292 -> H4382R4383 [lhead=cluster_171]
+	f_H4425R4426 [label="" color=black fixedsize=true shape=doublecircle style=filled width=0.2 xlabel="(1503)"]
+	H4336R4335 -> f_H4425R4426
+	f_H4497R4498 [label="" color=black fixedsize=true shape=doublecircle style=filled width=0.2 xlabel="(1539)"]
+	H4372R4371 -> f_H4497R4498
+	subgraph cluster_173 {
+		bgcolor="#f3f3f3" label="21-Step(1549)" style=solid
+		subgraph cluster_174 {
+			bgcolor="#FFE6CC" color="#D6B656" label="aux_done_cooking()" style=rounded
+			H4517R4518 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+		subgraph cluster_175 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['PASS']" style=rounded
+			H4519R4518 [label="PASSIVE['WAIT_TURN']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H4382R4383 -> H4517R4518 [lhead=cluster_173]
+	subgraph cluster_176 {
+		bgcolor="#f3f3f3" label="22-Step(1559)" style=solid
+		subgraph cluster_177 {
+			bgcolor="#FFE6CC" color="#D6B656" label="PASSIVE['WAIT_TURN']" style=rounded
+			H4544R4543 [label="PASSIVE['IDLE', 'PASS']" color="#6C8EBF" fillcolor="#DAE8FC" shape=box style="filled,solid,rounded"]
+		}
+	}
+	H4517R4518 -> H4544R4543 [lhead=cluster_176]
+	f_H4555R4556 [label="" color=black fixedsize=true shape=doublecircle style=filled width=0.2 xlabel="(1565)"]
+	H4544R4543 -> f_H4555R4556
+}
